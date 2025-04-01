@@ -1,0 +1,624 @@
+@font-face {
+    font-family: "TildaSans";
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src:
+        url("./font/TildaSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "TildaSansReg";
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src:
+        url("./font/TildaSans-Regular.ttf") format("truetype");
+}
+
+.body {
+    font-family: "TildaSans";
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000;
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Распределяет пространство между элементами */
+    padding: 0 90px; /* Отступы слева и справа */
+    margin-bottom: 80px;
+}
+
+nav {
+    flex-grow: 1; /* Занимает всё доступное пространство */
+    margin: 0 auto;
+    margin:0 0 0 150px;
+}
+
+nav ul {
+    list-style: none;
+    width: auto;
+    margin: 45px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navli:not(:last-child) {
+    margin-right: 40px; /* Расстояние между пунктами */
+}
+
+.navbuttons {
+    font-family: "TildaSans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+    line-height: 36px;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    transform: none; /* Точное центрирование */
+    align-items: center;
+    padding-top: 25px;
+}
+
+.navbutton {
+    font-family: "TildaSans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 36px;
+    text-decoration: none;
+    color: orange;
+    border:2px solid orange;
+    border-radius: 15px;
+    padding: 10px 20px;
+    white-space: nowrap; /* Чтобы текст кнопки не переносился */
+    box-sizing: border-box;
+    position: relative;
+    top: -2px;
+    transition: 1s linear;
+}
+
+.navli {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.name {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 54px; 
+}
+
+p {
+    font-family: "TildaSansReg";
+}
+
+.name2 {
+    display: inline;
+    font-size: 36px;
+    font-family: "TildaSansReg";
+}
+
+.nameimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello {
+    display: flex;          /* Добавить это, если нужно центрировать дочерние элементы */
+    flex-direction: column; /* Элементы в столбик */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #5DD9C8;
+    box-sizing: border-box;
+    padding-top: 40px;
+    border:0 40px 0 40px;
+    padding-bottom: 80px;
+
+}
+
+.helloh {
+    margin-block-end: 0.20em;
+}
+
+.hello p {
+    font-family: "TildaSansReg";
+    display: block;         /* Убрать flex (мешает переносу текста) */
+    width: 90%;            /* Ширина относительно родителя */
+    max-width: 900px;      /* Максимальная ширина текста */
+    min-width: 500px;      /* Минимальная ширина */
+    margin: 15px auto;     /* Автоматические отступы + вертикальный отступ */
+    font-size: 36px;
+    line-height: 1.4;      /* Межстрочный интервал */
+    word-wrap: normal;      /* Отключить принудительный перенос слов */
+
+   
+}
+
+.foto {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border-width: 3px;
+    padding: 180px 0 380px 0;
+}
+
+
+.fotosteam {
+    position: absolute;
+    border-radius: 12px;
+    width: 520px;
+    height: 520px;
+    border: 3px solid #5DD9C8;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillsandstack {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 50px 0;
+}
+
+.skillsandstack0 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.sites {
+    border: 1px solid #5DD9C8;
+    width: 300px;
+    border-radius: 15px 0 0 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px 0 20px;
+}
+
+.developmentsites {
+    font-size: 36px;
+}
+
+.developp {
+    font-size: 30px;
+}
+
+.languages {
+    color: orange;
+}
+
+.skillsandstack2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.sites2 {
+    border: 1px solid #5DD9C8;
+    width: 300px;
+    padding: 50px 20px 488px 20px;
+   
+}
+
+.skillsandstack3 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.sites3 {
+    border: 1px solid #5DD9C8;
+    width: 300px;
+    border-radius: 0 15px 15px 0;
+    align-items: stretch;
+    padding: 50px 20px 362px 20px;
+
+}
+
+.projecth {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.screenshots {
+    display: flex;
+    justify-content: center;
+}
+
+.screensteam {
+    width: 426px;
+    height: 240px;
+    border: 3px solid #8063A6;
+    border-radius: 15px;
+    margin: 15px 20px 50px 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.screenshots2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.screensteam:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+       
+
+.GitHub {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.navbutton:hover {
+    color: #fff; /* Цвет текста */
+    background: #f66d52; 
+}
+
+.order {
+display: flex;          /* Добавить это, если нужно центрировать дочерние элементы */
+flex-direction: column; /* Элементы в столбик */
+align-items: center;
+text-align: center;
+justify-content: center;
+background-color: #5DD9C8;
+box-sizing: border-box;
+padding: 20px 0 20px 0;
+border:0 20px 0 20px;
+line-height: 10px;
+}
+
+.orderh {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.orderp {
+    font-size: 36px;
+}
+
+.fielduserimr {
+    margin: 80px 0 0 80px;
+    display: flex;
+}
+.contacts-form {
+    margin-top: 50px;
+}
+
+.userimg {
+    width: 40%;
+    height: 40%;
+    padding-right: 200px;
+}
+
+.input2 {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.inputname {
+    position: relative;
+    margin-right: 50px;
+    padding-bottom: 20px;
+}
+
+.inputmail {
+    position: relative;
+}
+
+.inputtask {
+    position: relative;
+}
+
+input[type="text"] {
+    width: 270px !important;
+    height: 60px !important; 
+    border: 2px solid orange;
+    border-radius: 15px;
+    font-size: 26px;
+}
+
+textarea {
+    width: 595px !important;
+    height:330px !important; 
+    border: 2px solid orange;
+    border-radius: 15px;
+    text-align: start;
+    font-size: 26px; 
+}
+
+textarea::-webkit-resizer {
+    display: none;
+}
+
+.namemail {
+    width: 100px;
+    height: 40px;
+}
+
+label {
+    position: absolute;
+    font-size: 20px;
+    font-family: "TildaSansReg";
+    /* смещение относительно родительского элемента 10px вверх от верхнего края и   10px влево */
+    top: -40px;
+    left: 10px;
+    padding: 0 5px;
+  }
+ 
+button {
+    font-family: "TildaSans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: orange;
+    border:2px solid orange;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 20px 0 0 457px;
+    white-space: nowrap; /* Чтобы текст кнопки не переносился */
+    box-sizing: border-box;
+}
+
+button:hover {
+    color: #fff; /* Цвет текста */
+    background: #f66d52; 
+}
+
+.review {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.reviewh {
+    line-height: 20px;
+}
+
+.reviewp {
+    text-align: center;
+    font-size: 28px;
+}
+
+/* Новые стили для слайдера */
+.reviews-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-block1, 
+.review-block2 {
+    flex: 0 0 100%;
+    min-width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.review-block1.active-slide,
+.review-block2.active-slide {
+    opacity: 1;
+    visibility: visible;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #5DD9C8;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/* Остальные ваши стили остаются без изменений */
+.review-block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cj1 {
+    border-radius: 12px;
+    width: 380px;
+    height: 300px;
+    border: 3px solid #5DD9C8;
+    margin-top: 30px;
+}
+
+.reviewcarl {
+    text-align: center;
+}
+
+/* Стрелки */
+.arrowsdiv {
+    display: flex;
+    position: relative;
+    margin: 30px 420px 50px 420px;
+    justify-content: center; /* Центрируем кнопки */
+}
+
+.arrow {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow.prev {
+    margin-right: 200px; /* Сдвигаем только правую кнопку */
+}
+
+.arrow-icon {
+    border: 2px solid orange !important; /* Перебиваем другие стили */
+    border-radius: 15px;
+    padding: 8px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.arrow:hover .arrow-icon {
+    background: rgba(255, 165, 0, 0.1);
+}
+
+.review-block1, .review-block2 {
+    display: flex !important; /* Перебиваем возможные другие стили */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.review-block1.active-slide, 
+.review-block2.active-slide {
+    opacity: 1;
+    pointer-events: auto;
+    position: relative; /* Возвращаем в поток для центрирования */
+    left: auto;
+    transform: none;
+}
+
+/* Контейнер для слайдов */
+.slides-wrapper {
+    position: relative;
+    min-height: 600px; /* Фиксированная высота контейнера */
+    display: flex;
+    justify-content: center;
+}
+
+.lastcontact1 {
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.lastcontact {
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    margin: 50px 0 100px 10%;
+    background-color: #8063A6;
+    width: 1500px;
+    height: 200px;
+    border: 2px;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.deal {
+    padding: 40px 150px 0 0;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.deal2 {
+    padding: 40px 50px 0 0;
+    margin-right: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 150px;
+}
+
+.lastcontainer {
+    text-align: center;
+    margin-top: 85px;
+}
+
+.lastbutton {
+    border: 2px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    transition: 1s linear;
+    position: relative;
+}
+
+.lastbutton:hover {
+    color: #fff; /* Цвет текста */
+    background: #f66d52; 
+}
+
+footer {
+    background-color: #5DD9C8;
+}
+
+.lasticons {
+    display: flex;
+    justify-content: center;
+    padding-top: 180px;
+    gap: 20px;
+}
+
+.footericon {
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.footerlast {
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
