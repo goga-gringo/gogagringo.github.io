@@ -16,64 +16,457 @@
         url("./font/TildaSans-Regular.ttf") format("truetype");
 }
 
+
+@media (max-width:1150px) {
+    main {
+        width: 100%;
+        margin:0 auto;
+    }
+
+    .fielduserimr {
+       
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+
+    .contacts-form {
+        width: 100% !important;
+    }
+
+    .inputname, .inputmail, .inputtask {
+        width:100% ;
+    }
+
+    .inputmail {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #emailtext {
+        width: 87.6vw;
+    }
+
+
+
+   
+    .userimg {
+        width: 80% !important;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    button[type="submit"] {
+        align-self: center;
+        margin-left: 25% !important;
+      
+    }
+
+
+}
+
+
+
+@media (max-width: 1184px) {
+    .header {
+        display: flex;
+        justify-content:flex-start;
+        flex-direction: column;
+        height: auto; /* Убираем фиксированную высоту */
+        padding: 20px 0; /* Добавляем отступы */
+    }
+
+    .name3 {
+        width: 100% !important;
+    }
+
+
+    /* Адаптируем навигацию */
+    nav ul {
+        flex-direction: column; /* Ссылки в столбик */
+        padding: 0;
+        margin: 0;
+    }
+
+    .navli:not(:last-child) {
+        margin-right: 0; /* Убираем горизонтальные отступы */
+        margin-bottom: 15px; /* Добавляем вертикальные */
+    }
+
+    .navbuttons {
+        padding: 15px; /* Уменьшаем отступы */
+        font-size: 20px;
+    }
+
+    .container {
+        margin: 15px 0; /* Центрируем кнопку */
+        justify-content: center;
+    }
+    .projectsmedia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 60px;
+        width: 100%; /* Занимает всю ширину */
+    }
+    .screenshots {
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .screenshots2 {
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .screensteam:hover {
+        border-radius: 50%;
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+      }
+
+      .screen {
+        align-self: center;
+        justify-content: center;
+      }
+
+.lastcontact1 {
+        width: 100%;
+        display: flex;
+        justify-content: center; / Центрируем содержимое по горизонтали /
+        align-items: center; / Центрируем содержимое по вертикали /
+        margin-bottom: 0%;
+       
+}
+    
+    .lastcontact {
+        position: relative;
+        width: 90%; / Уменьшаем ширину блока, чтобы он был меньше и не занимал всю ширину экрана /
+        max-width: 400px; / Максимальная ширина для больших экранов /
+        display: flex;
+        flex-direction: column;
+        align-items: center !important; / Центрируем содержимое по горизонтали /
+        justify-content: center !important; / Центрируем содержимое по вертикали /
+        box-sizing: border-box;
+        text-align: center !important;
+        min-height: 600px; / Высота блока /
+        margin: 0 auto; / Центрируем блок по горизонтали /
+        padding-top: 40%;
+    }
+
+    .deal, .deal2 {
+        padding: 0;
+        margin: 7px 0;
+        text-align: center !important;
+        white-space: normal !important;
+    }
+    
+    .deal {
+        margin-top: 10%;
+        font-size: 2.77vh;
+        white-space: normal;
+        margin-left: 40%;
+    }
+
+    .deal2 {
+        font-size: 1.85vh;
+        line-height: 1.4;
+        white-space: normal !important;
+        margin-left: 50%;
+    
+    }
+
+    
+    
+    .lastcontainer {
+      
+        width: 100%;
+        margin-bottom: 20%;
+    }
+
+    .lastbutton {
+        width: 80%;
+        max-width: 300px;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    main {
+        margin-bottom: 800px;
+    }
+
+    footer {
+        margin-top: 700px !important;
+    }
+  
+     
+}
+
+@media (max-width: 993px) {
+
+        .header {
+            position: fixed;
+            z-index: 2;
+
+        }
+    
+        .menu-toggle {
+            display: none; /* Скрываем чекбокс */
+        }
+    
+        .menu-btn {
+            display: block; /* Показываем кнопку меню на мобильных устройствах */
+            position: absolute;
+            top: 10px; /* Позиция кнопки меню */
+            right: 10px;
+            cursor: pointer;
+            font-size: 2em;
+            z-index: 2;
+        }
+    
+        .add {
+            display: none; /* Скрываем меню по умолчанию */
+        }
+    
+        .menu-toggle:checked ~ .add {
+            display: block; /* Показываем меню, когда чекбокс активен */
+            position: absolute;
+            top: 50px; /* Позиционируем меню ниже кнопки */
+            left: 3%;
+            width: 100%;
+            background: #fff; /* Фон для меню */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Тень для эффекта выпадения */
+        }
+    
+        .nav {
+            width: 100%;
+        }
+    
+        .nav ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .navli {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+    
+        .navli:last-child {
+            border-bottom: none;
+        }
+    
+        .navbuttons, .navbutton {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+        }
+        body {
+            width: 100%;
+        }
+    
+        .row {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .skillsandstack0 .skillsandstack2 .skillsandstack3 {
+            justify-content: center;
+
+        }
+
+        .sites2 {
+            width: 300px !important;
+
+        }
+    
+        .sites {
+            align-self: center;
+        }
+    
+        .name {
+            padding-right: 20%;
+        }
+    
+        .arrowsdiv {
+            justify-content: center;
+            margin: 0 auto !important;
+        }
+    
+        .arrow {
+            width: 100%;
+            margin: auto;
+            padding: auto;
+            display: flex;
+            align-self: center;
+            position: relative !important;
+            align-items: center;
+        }
+    
+        .prev {
+            margin-left: 20% !important;
+        }
+    
+        .next {
+            margin-right: 20% !important;
+        }
+    
+        .contacts-form {
+            position: relative;
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+        #emailput {
+            width: 150px;
+        }
+    
+        #nameput {
+            width: 150px;
+        }
+
+        .GitHub {
+            display: flex;
+            justify-self: center;
+        }
+
+        .navbuttongit {
+            text-align: center;
+
+        }
+    
+    
+    
+    
+    }
+    
+    
+
+    
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2vh;
+        padding: 20px;
+    }
+
+    p {
+        padding: 30px;
+    }
+
+    .orderp {
+        line-height: 5vh;
+        padding: 30px;
+    }
+    
+  
+
+}
+
+
+
 .body {
     font-family: "TildaSans";
-    font-size: 20px;
+    font-size: 1.85vh;
     line-height: 1.4;
     color: #000;
+    margin: 0;
+    padding: 0;
+    
+    place-items: center; /* Центрирует по горизонтали и вертикали */
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .header {
+    width: 100%;
+    height: 11.6vh;
     display: flex;
     justify-content: center; /* Распределяет пространство между элементами */
-    padding: 0 90px; /* Отступы слева и справа */
-    margin-bottom: 80px;
+}
+
+.add {
+    padding-right:4.6vw; /* Отступы слева и справа */
+    left: 29.27%;
+    position: fixed;
+    top: 5vh;
+    z-index: 1000; 
+    transform: translateX(-10%);
 }
 
 nav {
     flex-grow: 1; /* Занимает всё доступное пространство */
-    margin: 0 auto;
-    margin:0 0 0 150px;
 }
+
+.navli2 {
+    white-space: nowrap;
+}
+
 
 nav ul {
     list-style: none;
     width: auto;
-    margin: 45px 0;
-    padding: 0;
+    padding: 0 0 2.6vw 0;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: space-between;
+}
+
+.navli {
+    list-style-type: none;
+    margin-top: 2.77vh;
 }
 
 .navli:not(:last-child) {
-    margin-right: 40px; /* Расстояние между пунктами */
+    margin-right: 2.08vw; /* Расстояние между пунктами */
 }
 
 .navbuttons {
     font-family: "TildaSans";
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2.31vh;
     text-decoration: none;
     color: #000;
-    line-height: 36px;
+    line-height: 3.33vh;
     padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
 }
 
 .container {
-    display: flex;
-    transform: none; /* Точное центрирование */
     align-items: center;
-    padding-top: 25px;
+    margin-left: 4vw;
 }
 
 .navbutton {
     font-family: "TildaSans";
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
-    line-height: 36px;
+    font-size: 2.31vh;
+    line-height: 3.33vh;
     text-decoration: none;
     color: orange;
     border:2px solid orange;
@@ -81,25 +474,24 @@ nav ul {
     padding: 10px 20px;
     white-space: nowrap; /* Чтобы текст кнопки не переносился */
     box-sizing: border-box;
-    position: relative;
-    top: -2px;
     transition: 1s linear;
+    background-color: #fff;
 }
 
-.navli {
-    list-style-type: none;
-    display: inline-block;
-    margin-top: 30px;
+.secondpart {
+    margin-top: 17.4vh;
+    width: 100%;
 }
 
 .name {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 3.7vh;
+    width: 100%;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 54px; 
+    font-size: 5vh; 
 }
 
 p {
@@ -107,9 +499,13 @@ p {
 }
 
 .name2 {
-    display: inline;
-    font-size: 36px;
+    font-size: 3.33vh;
     font-family: "TildaSansReg";
+}
+
+.name3 {
+    width: 42.13vw;
+    height: 50vh;
 }
 
 .nameimg {
@@ -119,33 +515,25 @@ p {
 }
 
 .hello {
-    display: flex;          /* Добавить это, если нужно центрировать дочерние элементы */
-    flex-direction: column; /* Элементы в столбик */
     align-items: center;
     text-align: center;
-    justify-content: center;
+    width: 100%;
     background-color: #5DD9C8;
-    box-sizing: border-box;
-    padding-top: 40px;
-    border:0 40px 0 40px;
-    padding-bottom: 80px;
+    padding-top: 3.7vh;
+    padding-bottom: 7.4vh;
 
 }
 
-.helloh {
-    margin-block-end: 0.20em;
-}
 
 .hello p {
     font-family: "TildaSansReg";
     display: block;         /* Убрать flex (мешает переносу текста) */
-    width: 90%;            /* Ширина относительно родителя */
-    max-width: 900px;      /* Максимальная ширина текста */
-    min-width: 500px;      /* Минимальная ширина */
-    margin: 15px auto;     /* Автоматические отступы + вертикальный отступ */
-    font-size: 36px;
-    line-height: 1.4;      /* Межстрочный интервал */
-    word-wrap: normal;      /* Отключить принудительный перенос слов */
+    width: 90%;
+    max-width: 46.8vw;
+    margin: 0.78vw auto;
+    font-size: 3.33vh;
+    line-height: 1.4;
+    word-wrap: break-word;     /* Отключить принудительный перенос слов */
 
    
 }
@@ -196,15 +584,15 @@ p {
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px 0 20px;
+    padding: 2.6vh 1.85vw 0 1.85vw;
 }
 
 .developmentsites {
-    font-size: 36px;
+    font-size: 3.33vh;
 }
 
 .developp {
-    font-size: 30px;
+    font-size: 2.77vh;
 }
 
 .languages {
@@ -220,8 +608,8 @@ p {
 
 .sites2 {
     border: 1px solid #5DD9C8;
-    width: 300px;
-    padding: 50px 20px 488px 20px;
+    width: 15.62vw;
+    padding: 2.6vh 1.85vw 28.75vh 1.85vw;
    
 }
 
@@ -237,7 +625,7 @@ p {
     width: 300px;
     border-radius: 0 15px 15px 0;
     align-items: stretch;
-    padding: 50px 20px 362px 20px;
+    padding: 2.6vh 1.85vw 20.95vh 1.85vw;
 
 }
 
@@ -300,37 +688,38 @@ line-height: 10px;
 }
 
 .orderh {
-    font-size: 40px;
+    font-size: 3.7vh;
     font-weight: bold;
 }
 
 .orderp {
-    font-size: 36px;
+    font-size: 3.33vh;
 }
 
 .fielduserimr {
-    margin: 80px 0 0 80px;
+    margin-top: 4.16vw;
+    margin-left: 4.16vh;
     display: flex;
 }
 .contacts-form {
-    margin-top: 50px;
+    margin-top: 4.62vh;
 }
 
 .userimg {
     width: 40%;
     height: 40%;
-    padding-right: 200px;
+    padding-right: 10.41vw;
 }
 
 .input2 {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 4.62vh;
 }
 
 .inputname {
     position: relative;
-    margin-right: 50px;
-    padding-bottom: 20px;
+    margin-right: 4.62vw;
+    padding-bottom: 1.85vh;
 }
 
 .inputmail {
@@ -339,27 +728,25 @@ line-height: 10px;
 
 .inputtask {
     position: relative;
+    
 }
 
 input[type="text"] {
-    width: 270px !important;
-    height: 60px !important; 
+    width: 14.06vw;
+    height: 5.5vh; 
     border: 2px solid orange;
     border-radius: 15px;
-    font-size: 26px;
+    font-size: 2.4vh;
 }
 
 textarea {
-    width: 595px !important;
-    height:330px !important; 
+    width: 32.98vw;
+    height:30.5vh; 
     border: 2px solid orange;
     border-radius: 15px;
     text-align: start;
-    font-size: 26px; 
-}
-
-textarea::-webkit-resizer {
-    display: none;
+    font-size: 2.4vh; 
+    resize: none;
 }
 
 .namemail {
@@ -369,7 +756,7 @@ textarea::-webkit-resizer {
 
 label {
     position: absolute;
-    font-size: 20px;
+    font-size: 1.85vh;
     font-family: "TildaSansReg";
     /* смещение относительно родительского элемента 10px вверх от верхнего края и   10px влево */
     top: -40px;
@@ -381,14 +768,15 @@ button {
     font-family: "TildaSans";
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.85vh;
     line-height: 30px;
     text-decoration: none;
     color: orange;
     border:2px solid orange;
     border-radius: 15px;
     padding: 10px 20px;
-    margin: 20px 0 0 457px;
+    margin-top: 1.85vh;
+    margin-right: 23.9vw;
     white-space: nowrap; /* Чтобы текст кнопки не переносился */
     box-sizing: border-box;
 }
@@ -412,14 +800,14 @@ button:hover {
 
 .reviewp {
     text-align: center;
-    font-size: 28px;
+    font-size: 2.59vh;
 }
 
 /* Новые стили для слайдера */
 .reviews-container {
     position: relative;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 20vh;
     overflow: hidden;
 }
 
@@ -548,28 +936,32 @@ button:hover {
 }
 
 .lastcontact1 {
-    position: relative;
-    margin-bottom: 150px;
+    position: absolute;
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); 
+    z-index: 5;
+    margin-top: 3.7vh;
+    
 }
 
 .lastcontact {
+    
     display: flex;
     justify-content: center;
     line-height: 30px;
-    margin: 50px 0 100px 10%;
     background-color: #8063A6;
     width: 1500px;
+    max-width: 100%; /* Чтобы не выходил за пределы экрана на маленьких разрешениях */
     height: 200px;
-    border: 2px;
+    border: 2px solid #8063A6;
     border-radius: 15px;
-    position: absolute;
 }
 
 .deal {
     padding: 40px 150px 0 0;
     text-align: center;
     color: #fff;
-    font-size: 30px;
+    font-size: 2.77vh;
 }
 
 .deal2 {
@@ -577,7 +969,7 @@ button:hover {
     margin-right: 100px;
     text-align: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.85vh;
     margin-right: 150px;
 }
 
@@ -602,7 +994,10 @@ button:hover {
 }
 
 footer {
+    width: 100%;
     background-color: #5DD9C8;
+    margin-top: 18.15vh;
+    z-index: 10;
 }
 
 .lasticons {

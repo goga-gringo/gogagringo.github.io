@@ -7,51 +7,57 @@
     <title>Grinko Goga</title>
 </head>
 <body class="body">
- <main>
-        <header class="header">
-                <nav class="nav">
-                    <ul>
+    <header class="header">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn"><span>☰</span></label>
+        <div class="add">
+            <nav class="nav">
+                <ul>
                     <li class="navli">
                         <a class="navbuttons" href="#glav">Главная</a>
-                        </li>
-                        <li class="navli">
-                            <a class="navbuttons" href="#obomne">Обо мне</a>
-                        </li>
-                        <li class="navli">
-                            <a class="navbuttons" href="#stek">Навыки и стэк</a>
-                        </li>
-                        <li class="navli">
+                    </li>
+                    <li class="navli navli2">
+                        <a class="navbuttons" href="#obomne">Обо мне</a>
+                    </li>
+                    <li class="navli navli2">
+                        <a class="navbuttons" href="#stek">Навыки и стэк</a>
+                    </li>
+                    <li class="navli">
                         <a class="navbuttons" href="#projects">Проекты</a>
-                        </li> <!-- Убрал лишний </li> -->
-                    </ul>
-                </nav>
-            <div class="container">
-                <a class="navbutton" href="#contacts">Связаться со мной</a>
-            </div>
-        </header>
-
-    <section class="name" id="glav">
-        <h1 class="name1">GOGA GRINGO</h1>
-        <p class="name2"> Разрабатываю сайты-визитки и рекламные лендинги </p>
-    </section>
-
-    <section class="nameimg">
-        <img class="name3" src="images/Главный экран.png" alt="Компьютер">
-    </section>
-
-    <section class="hello" id="obomne">
-        <h1 class="helloh">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК </h1>
-            <p class="hello p">Описание автора портфолио. Более подробный текст про вас, что вы делаете, какими проектами занимаетесь, Связаться со мной какой у вас опыт в профессии.</p>
-    </section>
-
-    <div class="foto">
-        <img src="images/steam.png" alt="фото автора" class="fotosteam">
-    </div>
-
-
-        <section class="skillsandstack" id="stek">
-            <h1 class="skills">НАВЫКИ И СТЭК ТЕХНОЛОГИИ</h1>
+                    </li> 
+                    <li class="navli navli3">
+                        <div class="container">
+                            <a class="navbutton" href="#contacts">Связаться со мной</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>   
+    </header>    
+ <main>
+    <div class="secondpart">
+        <section class="name" id="glav">
+            <h1 class="name1">GOGA GRINGO</h1>
+            <p class="name2"> Разрабатываю сайты-визитки и рекламные лендинги </p>
         </section>
+
+        <section class="nameimg">
+            <img class="name3" src="images/Главный экран.png" alt="Компьютер">
+        </section>
+
+        <div class="hello" id="obomne">
+            <h1 class="helloh">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК </h1>
+                <p class="hello p">Описание автора портфолио. Более подробный текст про вас, что вы делаете, какими проектами занимаетесь, Связаться со мной какой у вас опыт в профессии.</p>
+        </div>
+
+        <div class="foto">
+            <img src="images/steam.png" alt="фото автора" class="fotosteam">
+        </div>
+
+            <section class="skillsandstack" id="stek">
+                <h1 class="skills">НАВЫКИ И СТЭК ТЕХНОЛОГИИ</h1>
+            </section>
+    </div>
 
     <div class="row">
         <div class="skillsandstack0">
@@ -87,6 +93,7 @@
 
     <h1 class="projecth">ПРОЕКТЫ</h1>
 
+    <div class="projectsmedia">
                 <div class="screenshots" id="projects">
                     <div class="screen">
                         <a href="https://store.steampowered.com/app/2672760/Maza/"><img src="images/screen1.jpg" class="screensteam"></a> 
@@ -115,6 +122,7 @@
                         <a href="https://store.steampowered.com/app/2672760/Maza/"> <img src="images/screen6.jpg" class="screensteam"></a>
                     </div>
                 </div>
+    </div>             
 
     <div class="GitHub">
         <a class="navbutton" href="https://github.com/">Посмотреть на GitHub</a>
@@ -127,23 +135,25 @@
 
     <section class="fielduserimr">
         <img class="userimg" src="images/Форма.png" alt="Картинка пользователя">
-        <form class="contacts-form" method="post" action="/">
-            <div class="input2">
-                <div class="inputname">
-                <label>Имя</label>
-                    <input type="text" name="name"> 
+        <div class="formbox">
+            <form class="contacts-form" method="post" action="/">
+                <div class="input2">
+                    <div class="inputname">
+                    <label>Имя</label>
+                        <input type="text" name="name" id="nameput"> 
+                    </div>
+                    <div class="inputmail">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="emailput">
+                    </div>
                 </div>
-                <div class="inputmail">
-                    <label>E-mail</label>
-                    <input type="text" name="email">
-                </div>
-            </div>
-                <div class="inputtask">
-                    <label>Расскажите о своей задаче</label>
-                    <textarea name="email" rows="30" id="emailtext"></textarea>
-                </div>
-            <button type="submit">Отправить</button>
-        </form>
+                    <div class="inputtask">
+                        <label>Расскажите о своей задаче</label>
+                        <textarea name="email" rows="30" id="emailtext"></textarea>
+                    </div>
+                <button type="submit" class="buttonsend">Отправить</button>
+            </form>
+        </div>
     </section>
 
     <section class="review">
@@ -190,6 +200,7 @@
         </section>
     </div>
 </main>
+
 <footer>
     <section class="lasticons">
         <img src="icons/Email.svg" alt="footeremail" class="footericon">
